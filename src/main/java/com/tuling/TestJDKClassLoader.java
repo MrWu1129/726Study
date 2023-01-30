@@ -6,6 +6,11 @@ import java.net.URL;
 
 public class TestJDKClassLoader {
 
+    public String demo(){
+        System.out.println("没有打破双亲委派的自定义类加载器成功");
+        return "没有打破双亲委派的自定义类加载器成功";
+    }
+
     public static void main(String[] args) {
         System.out.println(String.class.getClassLoader());
         System.out.println(com.sun.crypto.provider.DESKeyFactory.class.getClassLoader().getClass().getName());
